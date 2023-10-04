@@ -36,3 +36,12 @@ def decode_message(message)
 
   decoded_message.strip
 end
+
+
+morse_message_example = "-- -.--   -. .- -- .   .. ...   - .- .--- . -- --- ..- - .."
+decoded_message = decode_message(morse_message_example)
+puts decoded_message
+
+message_from_bottle = ".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ..."
+decoded_message_from_bottle = decode_message(message_from_bottle)
+puts decoded_message_from_bottle
