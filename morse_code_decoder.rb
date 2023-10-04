@@ -25,3 +25,14 @@ def decode_word(morse_word)
 
   decoded_word
 end
+
+def decode_message(message)
+  message_words = message.split("   ")
+  decoded_message = ""
+
+  for word in message_words
+    decoded_message += decode_word(word) + " "
+  end
+
+  decoded_message.strip
+end
